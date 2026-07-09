@@ -1,4 +1,4 @@
-<nav class=" flex  bg-black border-b border-neutral px-5 py-5">
+<nav class=" flex  bg-neutral ring-1 ring-gray-200 border-b border-neutral px-5 py-5">
     <div class="container mx-auto flex justify-between items-center">
         <div class="font-bold text-xl text-primary">
             <a href="/">{{ config('app.name', 'Laravel') }}</a>

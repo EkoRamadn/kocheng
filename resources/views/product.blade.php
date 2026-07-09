@@ -1,26 +1,39 @@
 <x-layout>
-   <div class=" flex flex-row gap-5">
-     <section class="flex h-full flex-col">
-       <button class="flex flex-row items-center gap-3 border-r-2 border-b-2 py-5 px-10 border-blue-600">
-        <img class="w-10 h-10" src="https://www.freeiconspng.com/uploads/food-icon-7.png" alt="">
-        <h3>This is Title</h3>
-       </button>
-       <button class="flex flex-row items-center gap-3 border-r-2 py-5 px-10">
-        <img class="w-10 h-10" src="https://www.freeiconspng.com/uploads/food-icon-7.png" alt="">
-        <h3>This is Title</h3>
-       </button>
-       <button class="flex flex-row items-center gap-3 border-r-2 py-5 px-10">
-        <img class="w-10 h-10" src="https://www.freeiconspng.com/uploads/food-icon-7.png" alt="">
-        <h3>This is Title</h3>
-       </button>
-       <button class="flex flex-row items-center gap-3 border-r-2 py-5 px-10">
-        <img class="w-10 h-10" src="https://www.freeiconspng.com/uploads/food-icon-7.png" alt="">
-        <h3>This is Title</h3>
-       </button>
+   <div class=" flex flex-col gap-5">
+     <section class="flex h-full flex-row w-full justify-between items-center">
+        <div>
+            <h1>Product Catalogue</h1>
+            <p>Explore out pawduct you might like!</p>
+        </div>
+        <div>
+            <button class="categories">Categories</button>
+            <div class="categories-option absolute flex ring-1 p-2 rounded mt-2 flex-col" hidden>
+                <label>
+                    <input type="checkbox">
+                    Cat 1
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Cat 1
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Cat 1
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Cat 1
+                </label>
+            </div>
+        </div>
     </section>
 
     <section>
         <h1>This is catalagour</h1>
     </section>
    </div>
+
+   <x-slot:scripts>
+   <script src="{{ asset('js/product.js') }}"></script>
+   </x-slot>
 </x-layout>
