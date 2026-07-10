@@ -19,11 +19,11 @@
 }
 
 .th-dashboard {
-    @apply border border-black p-2 font-bold;
+    @apply p-2 font-bold;
 }
 
 .td-dashboard {
-    @apply border border-black p-2;
+    @apply p-2;
 }
 
 .btn-table-edit {
