@@ -11,7 +11,6 @@ Route::get('/index', function () {
     return view('users.index');
 });
 
-
 Route::get('/', function () {
     return view('users.index');
 })->name('home');
